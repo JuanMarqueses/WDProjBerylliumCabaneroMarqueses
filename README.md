@@ -4,6 +4,8 @@ Cabanero Marqueses Project Proposal
 Chasing Greatness: The Warriors Experience
 ---
 🏀logo:
+
+
 <img src="driverimgs/logo.png" alt="Website Logo" width="350">
 
 ---
@@ -14,3 +16,11 @@ This website is made for the NBA Team: Golden State Warriors. It aims to talk ab
 Website breakdown
 Home Page: This page will contain a simple menu/list which allows users to link and visit the other subpages on the Warriors
 SP1 Team Overview: This page
+
+Overview: This page wll contain things like an intro to the team, achievements, and the fanbase and culture.
+
+Player list: This page will show the current roster for the GSW in the 2025-2026 NBA season. This page will also have a short description like name, age, and position they play on the court.
+
+Staff list: This page will show the staff list of the GSW including coaching staff, executives, and basketball operations personnel. This will also have a short description on each staff including name, age, and position.
+
+Sources page: This page will show the sources we used to create the website to show people that our website has no false information. Sources will be credited in APA 7th edition.
