@@ -49,14 +49,6 @@ Other notes:
 
 <img src="driverimgs/P1.png" alt="Page 1" width="1200">
 
-#### Second Page: 
-
-<img src="driverimgs/P2.png" alt="Page 2" width="1200">
-
-#### Third Page:
-
-<img src="driverimgs/P3.png" alt="Page 3" width="1200">
-
 #### Sources:
 
 <img src="driverimgs/Sources.png" alt="Sources Page" width="1200">
