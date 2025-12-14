@@ -1,84 +1,91 @@
-*{
-    margin: 0;
-    padding: 0px;
-  }
-  .main {
-    padding: 0px 0px;
-    width: 100%;
-    background: linear-gradient(to top, rgba(0,0,0,0.3)50%, rgba(0,0,0,0.3)50%), url(/driverimgs/logo.png);
-    background-position: center center ;
-    background-size: cover;
-    height: 50vh;
-    background-repeat: no-repeat;
-   
-  }
-  
-  
-  
-  .navbar {
-    width: 100%;
-    display: flex;
-    background-color: rgb(14, 54, 91);
-    justify-content:last baseline;
-  }
 
-  .nav-right a {
-    color: white;
-    text-decoration: none;
-    margin-left: 176px; 
-    font-size: 16px;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
+html, body {
+  height: 100%;
+}
+
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.header {
+  background-color: #1d428a;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-img {
+  width: 50px;
+  height: auto;
+}
+
+.title span {
+  display: flex;
+  font-size: 40px;
+}
+.title strong {
+  display: flex;
+  font-size: 50px;
+}
+
+.nav {
+  font-size: 30px;
+  display: flex;
+  justify-content: center
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 95px;
+  margin: 5px;
+}
+
+
+.nav a:hover{
+  background-color: rgba(0, 213, 255, 0.156);
+}
+
+
+
+.content {
   
-  
-  
-  .navbar ul {
-    list-style: none;
-    display: flex;
-    gap: 100px;
-    margin: 10px;
-    padding: 5px;
-  }
-  
-  .navbar ul li a {
-    color: rgba(167, 130, 63);
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-    padding: 8px 16px;
-    border-radius: 6px;
-    transition: background-color 0.3s, color 0.3s;
-    font-family: "myFont";
-  }
-  
-  .navbar a:hover{
-    background-color: rgba(0, 255, 85, 0.156);
-  }
-  
-  .background{
-    background-color: rgb(28, 62, 121);
-    height: 160vh;
-    padding-top: 50px;
-  }
-  
-  .box{
-    border-radius: 25px;
-    background-color: rgb(255, 255, 255, 1);
-    padding: 20px;
-    margin: auto;
-    width: 1000px;
-    height: 150vh;
-    padding-top: 30px;
-    text-align: left;
-    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
-    font-family: "myFont";
-    font-size: 14px;
-  
-    .training-img {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    display: block;
-    margin: 20px auto; 
-  }
-  }
- 
+  flex: 1;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 40px;
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 30px;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid black;
+  padding: 15px 30px;
+  font-weight: bold;
+}
