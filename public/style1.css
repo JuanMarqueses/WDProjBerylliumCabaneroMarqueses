@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.header {
+  background-color: #1d428a;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-img {
+  width: 50px;
+  height: auto;
+}
+
+.title span {
+  display: flex;
+  font-size: 40px;
+}
+.title strong {
+  display: flex;
+  font-size: 50px;
+}
+
+.nav {
+  font-size: 30px;
+  display: flex;
+  justify-content: center
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 95px;
+  margin: 5px;
+}
+
+
+.nav a:hover{
+  background-color: rgba(0, 213, 255, 0.156);
+}
+
+.subtitle {
+    position: absolute;
+  margin-top: 50px;
+  left: 860px;
+}
+
+.content {
+  
+  flex: 1;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 40px;
+  text-align: center;
+}
+
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+
+  max-width: 1100px;   
+  margin: 0 auto;    
+  margin-top: 100px;
+}
+
+.player-card {
+  display: flex;
+  gap: 15px;
+}
+
+.image-placeholder {
+  width: 120px;
+  height: 120px;
+  border: 2px solid #000;
+  position: relative;
+}
+
+.image-placeholder::before,
+.image-placeholder::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #000;
+  top: 50%;
+  left: 0;
+  transform: rotate(45deg);
+}
+
+.image-placeholder::after {
+  transform: rotate(-45deg);
+}
+
+.player-info h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.player-info p {
+  font-size: 14px;
+}
+
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid black;
+  padding: 15px 30px;
+  font-weight: bold;
+}
