@@ -20,11 +20,13 @@ html, body {
 .header {
   background-color: #1d428a;
 }
+
 .logo {
   display: flex;
   align-items: center;
   gap: 15px;
 }
+
 
 .logo-img {
   width: 50px;
@@ -69,6 +71,9 @@ html, body {
   text-align: center;
   background-image: url("https://wallpapercave.com/wp/wp14662462.jpg");
   background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   
 }
 
@@ -89,6 +94,7 @@ html, body {
   display: flex;
   justify-content: space-between;
   border-top: 2px solid black;
-  padding: 15px 30px;
+  padding: 20px 30px;
   font-weight: bold;
+  
 }

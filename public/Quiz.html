@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chasing Greatness</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="header">
+      <div class="logo">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.Oe9cZL8usGpH2b_HT1Be_wHaEz?pid=Api&P=0&h=180" class="logo-img">
+        <div class="title">
+          <strong style="color: white">Chasing Greatness</strong>
+          <span style="color: white">The Warriors Experience</span>
+        </div>
+        
+      </div>
+
+      <nav class="nav">
+        <ul>
+        <a href="index.html" style="color: white">Home</a>
+        <ul>
+          <div class="sideMenu">
+        <li><a href="overview.html" style="color: white">Overview</a>
+                <ul class="subsideMenu">
+                            <li><a href="Quiz.html" style="color: white">- Quiz</a></li>
+                </ul>
+        </li></div>
+        <a href="players.html" style="color: white">Players</a>
+        <a href="staff.html" style="color: white">Staff</a>
+      </ul>
+      </nav>
+    </header>
+
+     <main class="content">
+    <div class="page">
+
+    <div id="quiz"></div>
+<button id="submit">Get Results</button>
+<div id="results"></div>
+
+    </main>
+</div>
+
+
+<footer class="footer">
+      <div> Contact info </div>
+      <div>Sources</div>
+      <div>Contact info</div>
+      <div class="row">
+  
+</div>
+    </footer>
+
+<script>
+// ==============================
+// 1️⃣ QUESTIONS
+// ==============================
+var myQuestions = [
+  {
+    question: "What is 10/2?",
+    answers: {
+      a: "3",
+      b: "5",
+      c: "115"
+    },
+    correctAnswer: "b"
+  },
+  {
+    question: "What is 30/3?",
+    answers: {
+      a: "3",
+      b: "5",
+      c: "10"
+    },
+    correctAnswer: "c"
+  }
+];
+
+// ==============================
+// 2️⃣ MAIN QUIZ FUNCTION
+// ==============================
+function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
+
+  // SHOW QUESTIONS
+  function showQuestions(questions, quizContainer){
+    var output = [];
+    var answers;
+
+    for(var i = 0; i < questions.length; i++){
+      answers = [];
+
+      for(var letter in questions[i].answers){
+        answers.push(
+          '<label>'
+          + '<input type="radio" name="question' + i + '" value="' + letter + '">'
+          + letter + ': '
+          + questions[i].answers[letter]
+          + '</label><br>'
+        );
+      }
+
+      output.push(
+        '<div class="question">' + questions[i].question + '</div>'
+        + '<div class="answers">' + answers.join('') + '</div>'
+      );
+    }
+
+    quizContainer.innerHTML = output.join('');
+  }
+
+  // SHOW RESULTS
+  function showResults(questions, quizContainer, resultsContainer){
+    var answerContainers = quizContainer.querySelectorAll('.answers');
+    var userAnswer = '';
+    var numCorrect = 0;
+
+    for(var i = 0; i < questions.length; i++){
+      userAnswer = (answerContainers[i]
+        .querySelector('input[name=question' + i + ']:checked') || {}).value;
+
+      if(userAnswer === questions[i].correctAnswer){
+        numCorrect++;
+        answerContainers[i].style.color = 'lightgreen';
+      } else {
+        answerContainers[i].style.color = 'red';
+      }
+    }
+
+    resultsContainer.innerHTML =
+      numCorrect + ' out of ' + questions.length;
+  }
+
+  // DISPLAY QUESTIONS
+  showQuestions(questions, quizContainer);
+
+  // SUBMIT BUTTON
+  submitButton.onclick = function(){
+    showResults(questions, quizContainer, resultsContainer);
+  };
+}
+
+// ==============================
+// 3️⃣ GET HTML ELEMENTS
+// ==============================
+var quizContainer = document.getElementById('quiz');
+var resultsContainer = document.getElementById('results');
+var submitButton = document.getElementById('submit');
+
+// ==============================
+// 4️⃣ START QUIZ
+// ==============================
+generateQuiz(myQuestions, quizContainer, resultsContainer, submitButton);
+</script>
+</body>
+</html>
