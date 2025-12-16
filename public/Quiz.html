@@ -55,9 +55,7 @@
     </footer>
 
 <script>
-// ==============================
-// 1️⃣ QUESTIONS
-// ==============================
+
 var myQuestions = [
   {
     question: "What is 10/2?",
@@ -79,12 +77,10 @@ var myQuestions = [
   }
 ];
 
-// ==============================
-// 2️⃣ MAIN QUIZ FUNCTION
-// ==============================
+
 function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
 
-  // SHOW QUESTIONS
+  
   function showQuestions(questions, quizContainer){
     var output = [];
     var answers;
@@ -111,7 +107,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
     quizContainer.innerHTML = output.join('');
   }
 
-  // SHOW RESULTS
+
   function showResults(questions, quizContainer, resultsContainer){
     var answerContainers = quizContainer.querySelectorAll('.answers');
     var userAnswer = '';
@@ -133,25 +129,20 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
       numCorrect + ' out of ' + questions.length;
   }
 
-  // DISPLAY QUESTIONS
+ 
   showQuestions(questions, quizContainer);
 
-  // SUBMIT BUTTON
+ 
   submitButton.onclick = function(){
     showResults(questions, quizContainer, resultsContainer);
   };
 }
 
-// ==============================
-// 3️⃣ GET HTML ELEMENTS
-// ==============================
 var quizContainer = document.getElementById('quiz');
 var resultsContainer = document.getElementById('results');
 var submitButton = document.getElementById('submit');
 
-// ==============================
-// 4️⃣ START QUIZ
-// ==============================
+
 generateQuiz(myQuestions, quizContainer, resultsContainer, submitButton);
 </script>
 </body>
