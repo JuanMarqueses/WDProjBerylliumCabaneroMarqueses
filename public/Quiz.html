@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-    
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Chasing Greatness</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Personality Quiz</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="stylequiz.css">
 </head>
 <body>
-<header class="header">
+<div class="page">
+
+
+
+    <header class="header">
       <div class="logo">
         <img src="https://tse1.mm.bing.net/th/id/OIP.Oe9cZL8usGpH2b_HT1Be_wHaEz?pid=Api&P=0&h=180" class="logo-img">
         <div class="title">
@@ -34,116 +37,48 @@
       </nav>
     </header>
 
-     <main class="content">
-    <div class="page">
+    
+<div class="quiz-container">
+  <h1 class="title">Basketball Position Quiz</h1>
 
-    <div id="quiz"></div>
-<button id="submit">Get Results</button>
-<div id="results"></div>
+  <div class="question"></div>
 
-    </main>
+  <label class="option">
+    <input type="radio" name="option">
+    <span class="option1"></span>
+  </label>
+
+  <label class="option">
+    <input type="radio" name="option">
+    <span class="option2"></span>
+  </label>
+
+  <label class="option">
+    <input type="radio" name="option">
+    <span class="option3"></span>
+  </label>
+
+  <label class="option">
+    <input type="radio" name="option">
+    <span class="option4"></span>
+  </label>
+
+  <div class="controls">
+    <button class="previous">Previous</button>
+    <button class="next">Next</button>
+  </div>
 </div>
 
-
-<footer class="footer">
-      <div> Contact info </div>
-      <div>Sources</div>
-      <div>Contact info</div>
-      <div class="row">
-  
-</div>
-    </footer>
-
-<script>
-
-var myQuestions = [
-  {
-    question: "What is 10/2?",
-    answers: {
-      a: "3",
-      b: "5",
-      c: "115"
-    },
-    correctAnswer: "b"
-  },
-  {
-    question: "What is 30/3?",
-    answers: {
-      a: "3",
-      b: "5",
-      c: "10"
-    },
-    correctAnswer: "c"
-  }
-];
+<div class="result"></div>
 
 
-function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
-
-  
-  function showQuestions(questions, quizContainer){
-    var output = [];
-    var answers;
-
-    for(var i = 0; i < questions.length; i++){
-      answers = [];
-
-      for(var letter in questions[i].answers){
-        answers.push(
-          '<label>'
-          + '<input type="radio" name="question' + i + '" value="' + letter + '">'
-          + letter + ': '
-          + questions[i].answers[letter]
-          + '</label><br>'
-        );
-      }
-
-      output.push(
-        '<div class="question">' + questions[i].question + '</div>'
-        + '<div class="answers">' + answers.join('') + '</div>'
-      );
-    }
-
-    quizContainer.innerHTML = output.join('');
-  }
+<div class="result"></div>
 
 
-  function showResults(questions, quizContainer, resultsContainer){
-    var answerContainers = quizContainer.querySelectorAll('.answers');
-    var userAnswer = '';
-    var numCorrect = 0;
+  <div class="result"></div>
 
-    for(var i = 0; i < questions.length; i++){
-      userAnswer = (answerContainers[i]
-        .querySelector('input[name=question' + i + ']:checked') || {}).value;
+  <script src="questions.js"></script>
+  <script src="quizmain.js"></script>
 
-      if(userAnswer === questions[i].correctAnswer){
-        numCorrect++;
-        answerContainers[i].style.color = 'lightgreen';
-      } else {
-        answerContainers[i].style.color = 'red';
-      }
-    }
-
-    resultsContainer.innerHTML =
-      numCorrect + ' out of ' + questions.length;
-  }
-
- 
-  showQuestions(questions, quizContainer);
-
- 
-  submitButton.onclick = function(){
-    showResults(questions, quizContainer, resultsContainer);
-  };
-}
-
-var quizContainer = document.getElementById('quiz');
-var resultsContainer = document.getElementById('results');
-var submitButton = document.getElementById('submit');
-
-
-generateQuiz(myQuestions, quizContainer, resultsContainer, submitButton);
-</script>
 </body>
 </html>
