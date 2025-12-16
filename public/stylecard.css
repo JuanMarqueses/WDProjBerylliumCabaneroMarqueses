@@ -84,6 +84,14 @@
     margin: 0 auto;
     line-height: 1;
   }
+
+  .box{
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 30px;
+  max-width: 900px;
+  margin: 60px auto;
+  border-radius: 12px;
+}
 .card {
     display: block;
     width: 300px;

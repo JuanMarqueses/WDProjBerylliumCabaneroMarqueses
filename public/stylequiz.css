@@ -1,0 +1,207 @@
+
+.quiz-container {
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px white;
+  padding: 3rem;
+  text-shadow: 0 1px #00000010;
+  width: 60%;
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(360deg, transparent, #1d428a);
+  min-height: 100vh;
+}
+.title {
+  margin-top: 0;
+  margin-bottom: 3rem;
+  color: #00000050;
+  font-weight: 400;
+  font-size: 2.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+.question {
+  margin: 2rem 0;
+  font-size: 1.5rem;
+}
+.option {
+  padding: 1rem;
+  color: #00000095;
+  background: rgba(255, 255, 255, 0.1);
+  width: 80%;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+.option:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+.option input:checked .option {
+  background: #08038c;
+  color: #000;
+}
+.controls > * {
+  margin: 1rem;
+}
+button {
+  padding: 0.5rem 1.5rem;
+  border: none;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  font-weight: 300;
+  color: white;
+  outline: none;
+  transform: scale(0.98);
+  transition: all 0.2s;
+}
+button.previous {
+  background: #FFC72C;
+}
+button.next {
+  background: #FFC72C;
+}
+
+
+button:hover,
+button:focus {
+  transform: scale(1);
+  font-weight: 500;
+  box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+}
+.result {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2.5rem;
+  min-height: 100vh;
+}
+.final-score {
+  color: #00000099;
+}
+.summary {
+  font-size: 1rem;
+  text-shadow: 1px 1px #ffffff50;
+  color: #00000099;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 2rem;
+  margin-bottom: 2rem;
+}
+.summary h1 {
+  align-self: center;
+}
+html, body {
+  height: 100%;
+}
+
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.header {
+  background-color: #1d428a;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+
+.logo-img {
+  width: 50px;
+  height: auto;
+}
+
+.title span {
+  display: flex;
+  font-size: 40px;
+}
+.title strong {
+  display: flex;
+  font-size: 50px;
+}
+
+.nav {
+  font-size: 30px;
+  display: flex;
+  justify-content: center
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 95px;
+  margin: 5px;
+}
+
+
+.nav a:hover{
+  background-color: rgba(0, 213, 255, 0.156);
+}
+
+
+
+.content {
+  
+  flex: 1;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 40px;
+  text-align: center;
+  background-image: url("https://wallpapercave.com/wp/wp14662462.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  
+}
+
+.content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 30px;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+
+button {
+        width: 150px;
+        margin: auto;
+      background-color: #FFC72C; 
+      border: none; 
+      color: #1d428a; 
+      padding: 12px 24px; 
+      text-align: center; 
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 4px; 
+      cursor: pointer;
+      transition-duration: 0.3s; 
+}
+
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid black;
+  padding: 20px 30px;
+  font-weight: bold;
+  
+}

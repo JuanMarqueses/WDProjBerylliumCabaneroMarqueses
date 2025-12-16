@@ -82,6 +82,42 @@
   line-height: 1.6;
 }
 
+.box{
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 30px;
+  max-width: 900px;
+  margin: 60px auto;
+  border-radius: 12px;
+}
+
+.image-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.img {
+  text-align: center;
+}
+
+.img img {
+  width: 500px;
+  height: 300px;
+  border: 8px solid #1d428a;
+  border-radius: 4px;
+}
+
+.img figcaption {
+  margin-top: 10px;
+  padding: 8px 12px;
+  font-size: 18px;
+  color: #1d428a;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 6px;
+}
+
 
 button {
         width: 150px;
