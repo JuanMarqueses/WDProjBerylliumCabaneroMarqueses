@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html, body {
+    height: 100%;
+  }
+  
+  
+  .page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  .header {
+    background-color: #1d428a;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  
+  .logo-img {
+    width: 50px;
+    height: auto;
+  }
+  
+  .title span {
+    display: flex;
+    font-size: 40px;
+  }
+  .title strong {
+    display: flex;
+    font-size: 50px;
+  }
+  
+  .nav {
+    font-size: 30px;
+    display: flex;
+    justify-content: center
+  }
+  
+  .nav ul {
+    list-style: none;
+    display: flex;
+    gap: 95px;
+    margin: 5px;
+  }
+  
+  
+  .nav a:hover{
+    background-color: rgba(0, 213, 255, 0.156);
+  }
+
+  .content {
+  
+    flex: 1;
+    border: 2px solid rgb(0, 0, 0);
+    margin: 20px;
+    padding: 40px;
+    text-align: center;
+    background-image: url("https://wallpapercave.com/wp/wp14662462.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+  }
+  .content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .content h2 {
+    font-size: 30px;
+    max-width: 7000px;
+    margin: 0 auto;
+    line-height: 1;
+  }
+.card {
+    display: block;
+    width: 300px;
+    border: 1px solid #1d428a;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    text-decoration: none;
+    color: inherit;
+
+}
+ 
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+ 
+.card img {
+    width: 278px;
+    height: 380px;
+    border-radius: 5px 5px 0 0;
+    
+}
+ 
+.card h2 {
+    margin: 10px 0;
+}
+ 
+.card p {
+    margin: 10px 0;
+  }
+ .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid black;
+    padding: 20px 30px;
+    font-weight: bold;
+    
+  }
