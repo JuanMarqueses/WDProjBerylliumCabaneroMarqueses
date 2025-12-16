@@ -31,6 +31,12 @@
 #### P5 Game Day: This page discusses on how the team prepares for every game, the struggle, the challenges and the plans they make in order to make the best out of each game and reach their goals, as well as how they build their chemistry. This will basically show the overall procedure the team goes through to get ready every season
 
 ####  Sources page: This page will show the sources we used to create the website to show people that our website has no false information. Sources will be credited in APA 7th edition.
+
+---
+
+### JavaScript Incorporation:
+#### We will incorporate Javascript in our code by making a quiz that people can take. This quiz will ask 10 questions that have no right or wrong answers. Its a personality test formatted quiz where the answers decide the position that suits you best for the most repeated letter. You are allowed to go to the previous question in case you change your mind, but you cannot move forward without picking an option.  Furthermore information, if the most repeated letter in your answers is A – Point Guard, B – Shooting Guard,C – Small/Power Forward, and D – Center. Lastly when the position is revealed, it gives a quick description of what the position focuses on.
+
 ---
 Other notes:
 

@@ -16,11 +16,14 @@ const result = document.querySelector('.result');
 
 function generateQuestion(index) {
   const q = questions[index];
-  questionEl.textContent = ${index + 1}. ${q.question};
+
+
+  questionEl.textContent = `${index + 1}. ${q.question}`;
 
   options.forEach((opt, i) => {
-    opt.textContent = q[answer${i + 1}];
-    opt.dataset.total = q[answer${i + 1}Total];
+
+    opt.textContent = q[`answer${i + 1}`];
+    opt.dataset.total = q[`answer${i + 1}Total`];
   });
 }
 
