@@ -38,6 +38,11 @@
 #### We will incorporate Javascript in our code by making a quiz that people can take. This quiz will ask 10 questions that have no right or wrong answers. Its a personality test formatted quiz where the answers decide the position that suits you best for the most repeated letter. You are allowed to go to the previous question in case you change your mind, but you cannot move forward without picking an option.  Furthermore information, if the most repeated letter in your answers is A – Point Guard, B – Shooting Guard,C – Small/Power Forward, and D – Center. Lastly when the position is revealed, it gives a quick description of what the position focuses on.
 
 ---
+
+### Design and Narrative of the HTML Feedback Form:
+#### The HTML feedback form is designed to collect opinions and suggestions from users of the website. The main purpose is to allow fans to share their experience and preferences. The form will ask for basic info like name, email, favorite player, and feedback. Once submitted, the information is saved locally on the user's computer using browser storage or a downloadable file. Overall, the form shows how HTML forms can be used to gather user input while keeping data private.
+
+---
 Other notes:
 
 - All links will be placed on the top under the title of each page except sources which is placed at the bottom center of each page.
