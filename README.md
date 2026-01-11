@@ -72,3 +72,11 @@ Other notes:
 
 <img src="driverimgs/Sources.png" alt="Sources Page" width="1200">
 
+
+#### Feedback Pages:
+
+<img src="driverimgs/6.png" alt="Feedback Page" width="1200">
+
+<img src="driverimgs/7.png" alt="Feedback Page" width="1200">
+
+<img src="driverimgs/image.jpg" alt="Feedback Page" width="1200">
