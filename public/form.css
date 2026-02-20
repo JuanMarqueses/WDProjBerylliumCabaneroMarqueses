@@ -1,0 +1,104 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI, sans-serif;
+}
+
+body{
+background:#0f1f3d;
+color:white;
+}
+
+/* HEADER */
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 50px;
+background:#1d428a;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.logo img{
+height:45px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-weight:500;
+transition:.3s;
+}
+
+nav a:hover{
+color:#ffc72c;
+}
+
+/* HERO */
+.hero{
+height:85vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:url("https://images.unsplash.com/photo-1546519638-68e109498ffc") center/cover;
+}
+
+/* GLASS CARD */
+.card{
+background:rgba(255,255,255,0.15);
+backdrop-filter:blur(12px);
+padding:40px;
+border-radius:15px;
+max-width:600px;
+text-align:center;
+}
+
+/* FORMS */
+.center{
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.form-card{
+background:white;
+color:black;
+padding:30px;
+border-radius:12px;
+width:300px;
+}
+
+input, textarea{
+width:100%;
+padding:8px;
+margin:8px 0;
+}
+
+button{
+background:#1d428a;
+color:white;
+border:none;
+padding:10px;
+width:100%;
+cursor:pointer;
+}
+
+button:hover{
+background:#16346d;
+}
+
+/* FOOTER */
+.footer{
+display:flex;
+justify-content:space-between;
+padding:12px 40px;
+background:#1d428a;
+}
