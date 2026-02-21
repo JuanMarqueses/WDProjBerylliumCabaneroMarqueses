@@ -102,3 +102,20 @@ justify-content:space-between;
 padding:12px 40px;
 background:#1d428a;
 }
+
+.back-btn{
+display:inline-block;
+margin:20px;
+padding:10px 16px;
+background:#1d428a;
+color:white;
+text-decoration:none;
+border-radius:8px;
+font-weight:600;
+transition:0.3s;
+}
+
+.back-btn:hover{
+background:#ffc72c;
+color:black;
+}

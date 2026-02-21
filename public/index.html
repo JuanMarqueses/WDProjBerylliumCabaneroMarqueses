@@ -6,6 +6,7 @@
   <title>Chasing Greatness</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image" href="../driverimgs/favicon1.png" >
+  <script defer src="scriptt.js"></script>
 </head>
 <body>
 
@@ -24,23 +25,30 @@
       </div>
 
       <nav class="nav">
-        <ul>
-        <a href="index.html" style="color: white">Home</a>
-        <ul>
-          <div class="sideMenu">
-        <li><a href="overview.html" style="color: white">Overview</a>
-                <ul class="subsideMenu">
-                            <li><a href="Quiz.html" style="color: white">- Quiz</a>
-                            
-                            </li>
-                </ul>
-        </li></div>
-        <a href="playercards.html" style="color: white">Players</a>
-        <a href="staff.html" style="color: white">Staff</a>
-        <a href="login.html" style="color: white">Login</a>
-    <a href="feedback.html" style="color: white">Rate & Feedback</a>
+  <ul class="menu">
+
+    <li><a href="index.html">Home</a></li>
+
+    <li class="dropdown">
+      <a href="overview.html">Overview</a>
+      <ul class="submenu">
+        <li><a href="Quiz.html">Quiz</a></li>
       </ul>
-      </nav>
+    </li>
+
+    <li><a href="playercards.html">Players</a></li>
+    <li><a href="staff.html">Staff</a></li>
+    <li><a href="login.html">Login</a></li>
+
+    <li class="dropdown">
+      <a href="feedback.html">Rate & Feedback</a>
+      <ul class="submenu">
+        <li><a href="feedbacklist.html">Feedback List</a></li>
+      </ul>
+    </li>
+
+  </ul>
+</nav>
     </header>
 
  
@@ -55,8 +63,8 @@
          Their strong global fanbase reflects the team’s impact not only in basketball but also in popular culture and community involvement.
       </p> 
 
-      <h3>⭐ Site Rating</h3>
-    <p id="avgRating">No ratings yet</p>
+      <h3>⭐ Website Rating</h3>
+<p id="avgRating">Loading...</p>
   
     </div>
     <style>
