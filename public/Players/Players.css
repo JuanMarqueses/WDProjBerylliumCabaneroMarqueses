@@ -245,8 +245,7 @@ background:#0f2a5c;
 
 
 
-
-.CurryBody {
+.PlayerBody {
     position: relative;
     width: 80%;
     margin: auto auto 49px auto;
@@ -256,14 +255,14 @@ background:#0f2a5c;
     
 }
 
-.CurryBody > p {
+.PlayerBody > p {
     padding-left: 3.5%;
     padding-right: 3.5%;
     color: #dbdde0;
     text-align: center;
 }
 
-.CurryBody > a {
+.PlayerBody > a {
     display: block;
     background-color: #1E1030;
     width: 70px;
@@ -273,7 +272,7 @@ background:#0f2a5c;
     margin-bottom: 30px;
 }
 
-.CurryBody > a:hover {
+.PlayerBody > a:hover {
     transform: scale(1.1); 
     color: #1d428a; 
     text-shadow:
@@ -283,7 +282,7 @@ background:#0f2a5c;
 }
 
 
-.Curry {
+.Player {
     display: flex;
     justify-content: flex-end;
 }
@@ -316,7 +315,7 @@ background:#0f2a5c;
     background-size: cover;
 }
 
-.CurryContent {
+.PlayerContent {
     width: 100%;
     display: flex;
     padding: 40px;   
@@ -324,7 +323,7 @@ background:#0f2a5c;
     border-bottom: 2px solid #192c50;
 }
 
-.CurryContent > img {
+.PlayerContent > img {
     width: 30%;
     height: auto;
     border-radius: 50px;
@@ -333,19 +332,19 @@ background:#0f2a5c;
 }
 
 
-.CurryTexts img {
+.PlayerTexts img {
     
     display: inline-block;
     width: 2vw;
     vertical-align: middle;
 }
 
-.CurryTexts img:hover {
+.PlayerTexts img:hover {
     transform: scale(1.1);
     transition-duration: .2s;
 }
 
-.CurryBody h1 {
+.PlayerBody h1 {
     margin-top: 0;
     font-family: MyFont;
     text-align: left;
@@ -354,7 +353,7 @@ background:#0f2a5c;
     color: #FFC72C;    
 }
 
-.CurryTexts >  p {
+.PlayerTexts >  p {
     margin-bottom: 10px;
     font-size: 18px;
     font-family: MyFont;
@@ -394,7 +393,7 @@ p {
 .player-table tr:nth-child(even) {
     background-color: #e6e6e6;
 }
-.CurryTexts {
+.PlayerTexts {
     flex: 1;
     padding-right: 40px;
    
