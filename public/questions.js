@@ -17,7 +17,7 @@ const questions = [
     answer3: "I set screens and grab rebounds",
     answer3Total: 3, // Forward: hustle and versatility
 
-    answer4: "I protect the paint and block shots",
+    answer4 : "I protect the paint and block shots",
     answer4Total: 4  // Center: defense and interior presence
   },
 
