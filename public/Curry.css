@@ -1,0 +1,401 @@
+* html, body {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.header {
+  background-color: #1d428a;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+
+.logo-img {
+  width: 50px;
+  height: auto;
+}
+
+.title span {
+  display: flex;
+  font-size: 40px;
+}
+.title strong {
+  display: flex;
+  font-size: 50px;
+}
+
+.nav {
+  font-size: 30px;
+  display: flex;
+  justify-content: center
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 95px;
+  margin: 5px;
+}
+
+
+.nav a:hover{
+  background-color: rgba(0, 213, 255, 0.156);
+}
+
+
+
+.content {
+  
+  flex: 1;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 40px;
+  text-align: center;
+  background-image: url("https://wallpapercave.com/wp/wp14662462.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  
+}
+
+.content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 30px;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.box{
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 30px;
+  max-width: 900px;
+  margin: 60px auto;
+  border-radius: 12px;
+}
+
+.image-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.img {
+  text-align: center;
+}
+
+.img img {
+  width: 500px;
+  height: 300px;
+  border: 8px solid #1d428a;
+  border-radius: 4px;
+}
+
+.img figcaption {
+  margin-top: 10px;
+  padding: 8px 12px;
+  font-size: 18px;
+  color: #1d428a;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 6px;
+}
+
+
+button {
+        width: 150px;
+        margin: auto;
+      background-color: #FFC72C; 
+      border: none; 
+      color: #1d428a; 
+      padding: 12px 24px; 
+      text-align: center; 
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 4px; 
+      cursor: pointer;
+      transition-duration: 0.3s; 
+      }
+      button:hover {
+      background-color: #1d428a; 
+      color: #FFC72C;
+      }
+
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid black;
+  padding: 20px 30px;
+  font-weight: bold;
+  
+}
+
+
+.nav{
+background:#1d428a;
+padding:15px 0;
+}
+
+.menu{
+list-style:none;
+display:flex;
+justify-content:center;
+gap:40px;
+margin:0;
+padding:0;
+}
+
+
+.menu a{
+color:white;
+text-decoration:none;
+font-size:30px;
+position:relative;
+padding:5px 0;
+transition:0.3s;
+}
+
+
+.menu a::after{
+content:"";
+position:absolute;
+left:0;
+bottom:-5px;
+width:0%;
+height:2px;
+background:white;
+transition:0.3s;
+}
+
+.menu a:hover::after{
+width:100%;
+}
+
+.menu a:hover{
+transform:translateY(-3px);
+}
+
+
+
+.dropdown{
+position:relative;
+}
+
+.submenu{
+position:absolute;
+top:120%;
+left:0;
+background:#16346d;
+padding:10px 0;
+border-radius:8px;
+list-style:none;
+min-width:160px;
+
+
+opacity:0;
+transform:translateY(10px);
+pointer-events:none;
+transition:0.3s ease;
+}
+
+.dropdown:hover .submenu{
+opacity:1;
+transform:translateY(0);
+pointer-events:auto;
+}
+
+.submenu li{
+padding:8px 18px;
+}
+
+.submenu a{
+display:block;
+font-size:16px;
+}
+
+
+.submenu li:hover{
+background:#0f2a5c;
+}
+
+
+
+
+
+
+
+.CurryBody {
+    position: relative;
+    width: 80%;
+    margin: auto auto 49px auto;
+    background-color: #1d428a;
+    border-top: 2px solid #FFC72C;
+    border-bottom: 2px solid #FFC72C;
+    
+}
+
+.CurryBody > p {
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+    color: #dbdde0;
+    text-align: center;
+}
+
+.CurryBody > a {
+    display: block;
+    background-color: #1E1030;
+    width: 70px;
+    text-align: center;
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.CurryBody > a:hover {
+    transform: scale(1.1); 
+    color: #1d428a; 
+    text-shadow:
+    0 0 5px #dbdde0,
+    0 0 15px #1d428a;
+    transition-duration: .5s;
+}
+
+
+.Curry {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.Back a {
+    display: inline-block;
+    color: white;
+    padding-right: 10px;
+}
+
+.Back a:hover {
+    color: #1d428a; 
+    text-shadow:
+    0 0 5px #dbdde0,
+    0 0 15px #1d428a;
+    transition-duration: .5s;
+}
+
+.content {
+  
+    flex: 1;
+    border: 2px solid #000000;
+    margin: 20px;
+    padding: 40px;
+    text-align: center;
+    background-image: url("https://wallpapercave.com/wp/wp14662462.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.CurryContent {
+    width: 100%;
+    display: flex;
+    padding: 40px;   
+    margin: auto;
+    border-bottom: 2px solid #192c50;
+}
+
+.CurryContent > img {
+    width: 30%;
+    height: auto;
+    border-radius: 50px;
+    border: 3px solid #FFC72C;
+    margin-right: 20px;
+}
+
+
+.CurryTexts img {
+    
+    display: inline-block;
+    width: 2vw;
+    vertical-align: middle;
+}
+
+.CurryTexts img:hover {
+    transform: scale(1.1);
+    transition-duration: .2s;
+}
+
+.CurryBody h1 {
+    margin-top: 0;
+    font-family: MyFont;
+    text-align: left;
+    font-size: 40px;
+    margin-bottom: -20px;
+    color: #FFC72C;    
+}
+
+.CurryTexts >  p {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-family: MyFont;
+    color:white;
+}
+
+p {
+    font-family: MyFont;
+    color: white;
+    font-size: 16px;
+}
+
+.player-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #f5f5f5;
+    border-radius: 12px;
+    overflow: hidden;
+    font-size: 20px;
+}
+
+.player-table th {
+    background-color: #1D428A;
+    color: white;
+    padding: 14px;
+    text-align: left;
+    width: 40%;
+    font-size: 16px;
+}
+
+.player-table td {
+    padding: 14px;
+    font-size: 16px;
+}
+
+.player-table tr:nth-child(even) {
+    background-color: #e6e6e6;
+}
+.CurryTexts {
+    flex: 1;
+    padding-right: 40px;
+   
+}
