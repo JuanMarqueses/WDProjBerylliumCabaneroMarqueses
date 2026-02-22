@@ -40,7 +40,7 @@
 ---
 
 ### Design and Narrative of the HTML Feedback Form:
-#### The HTML feedback form is designed to collect opinions and suggestions from users of the website. The main purpose is to allow fans to share their experience and preferences. The form will ask for basic info like name, email, favorite player, and feedback. Once submitted, the information is saved locally on the user's computer using browser storage or a downloadable file. Overall, the form shows how HTML forms can be used to gather user input while keeping data private.
+#### The HTML feedback form is designed to collect opinions and suggestions from users of the website. The main purpose is to allow fans to share their experience and preferences. The form will ask them to first create an account in the login page before being able to rate the site and give suggestions. The average rating of the website is also shown in the homepage to let new users know how good the website is. The list of feedback is then sent to the feedback list page found under the Rate & Feedback choice in the navigation bar. The page requires and admin password to view all feedback to ensure only athorized personnel are able to view the feedback. The password is warriors123. Overall, the form shows how HTML forms can be used to gather user input while keeping data private.
 
 ---
 Other notes:
