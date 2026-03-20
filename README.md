@@ -50,6 +50,24 @@ Other notes:
 - The bottom left will contain information/social pages of the Golden State Warriors Team and where you can find more information about the team itself
 
 ---
+
+# FINAL MODIFICATION PROPOSAL
+
+### Idea: The idea is to make a mini quiz about the Golden State Warriors where users can test their knowledge. After users finish the quiz, their score will be saved and put on a leaderboard for everyone to see. 
+
+### Purpose: This makes the website more interactive and engaging by: Testing user knowledge about the team, allowing users to commpete with one another, and letting users learn something about the team. 
+
+### How CRUD is implemented: 
+### CREATE: After completing the quiz, users will enter their name and their score is saved in localStorage
+### READ: These scores are then displayed on a leaderboard. This can include rank, score, or time taken on the quiz.
+### UPDATE: Users can edit their name or update their score by retaking the quiz.
+### DELETE: Users can also choose to remove their place on the leaderboard if they choose to.
+
+### How it works: There will be example questions and each of these questions range from EASY, MEDIUM, or HARD diffuculty. Each correct answer gets the user a certain amount of points based on the difficulty (ex. Easy = +1, Medium = +2, and Hard = +3). 
+
+### The quiz will be accessed through a drop down menu below the overview section.
+
+
 ### Mock-up:
 
 #### Home Page: 
@@ -80,3 +98,10 @@ Other notes:
 <img src="driverimgs/7.png" alt="Feedback Page" width="1200">
 
 <img src="driverimgs/image.jpg" alt="Feedback Page" width="1200">
+
+
+#### FINAL MODIFICATION PROPOSAL WIREFRAES
+
+<img src="driverimgs/warriorsleaderboard.png" alt="Leaderboard Page" width="1200">
+
+<img src="driverimgs/warriorsquiz.png" alt="Quiz Page" width="1200">
