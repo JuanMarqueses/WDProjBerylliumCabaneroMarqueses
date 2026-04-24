@@ -1,0 +1,269 @@
+html, body {
+  height: 100%;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: #1d428a;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-img {
+  width: 50px;
+  height: auto;
+}
+
+.title span {
+  display: flex;
+  font-size: 40px;
+}
+
+.title strong {
+  display: flex;
+  font-size: 50px;
+}
+
+.nav {
+  background: #1d428a;
+  padding: 15px 0;
+}
+
+.nav ul,
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  position: relative;
+  padding: 5px 0;
+  transition: 0.3s;
+}
+
+.menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background: white;
+  transition: 0.3s;
+}
+
+.menu a:hover::after {
+  width: 100%;
+}
+
+.menu a:hover {
+  transform: translateY(-3px);
+}
+
+.dropdown {
+  position: relative;
+}
+
+.submenu {
+  position: absolute;
+  top: 120%;
+  left: 0;
+  background: #16346d;
+  padding: 10px 0;
+  border-radius: 8px;
+  list-style: none;
+  min-width: 160px;
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+
+.dropdown:hover .submenu {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.submenu li {
+  padding: 8px 18px;
+}
+
+.submenu a {
+  display: block;
+  font-size: 16px;
+}
+
+.submenu li:hover {
+  background: #0f2a5c;
+}
+
+.content {
+  flex: 1;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 40px;
+  text-align: center;
+  background-image: url("https://wallpapercave.com/wp/wp14662462.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 30px;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.box {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 30px;
+  max-width: 900px;
+  margin: 60px auto;
+  border-radius: 12px;
+}
+
+.image-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.img {
+  text-align: center;
+}
+
+.img img {
+  width: 500px;
+  height: 300px;
+  border: 8px solid #1d428a;
+  border-radius: 4px;
+}
+
+.img figcaption {
+  margin-top: 10px;
+  padding: 8px 12px;
+  font-size: 18px;
+  color: #1d428a;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 6px;
+}
+
+button {
+  width: 150px;
+  margin: auto;
+  background-color: #FFC72C;
+  border: none;
+  color: #1d428a;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+button:hover {
+  background-color: #1d428a;
+  color: #FFC72C;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid black;
+  padding: 20px 30px;
+  font-weight: bold;
+}
+
+.lineup-container {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 25px;
+  max-width: 500px;
+  margin: 40px auto;
+  border-radius: 12px;
+  color: black;
+}
+
+.lineup-container input {
+  padding: 10px;
+  margin: 5px;
+  width: 80%;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.lineup {
+  margin-top: 20px;
+}
+
+.card {
+  background: white;
+  color: black;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border-left: 6px solid #1d428a;
+}
+
+.card button {
+  margin: 5px;
+  width: auto;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.lineup-container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  width: 600px;
+  max-width: 90%;
+  margin: 60px auto;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.lineup-container input {
+  padding: 12px;
+  margin: 10px;
+  width: 90%;
+  font-size: 16px;
+}
+
+.card {
+  background: white;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border-left: 6px solid #1d428a;
+}

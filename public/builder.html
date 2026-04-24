@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chasing Greatness</title>
+
+  <link rel="stylesheet" href="builder.css">
+  <link rel="icon" type="image" href="../driverimgs/favicon1.png">
+
+</head>
+
+<body>
+  <div class="page">
+
+    <header class="header">
+      <div class="logo">
+        <img src="../driverimgs/favicon1.png" class="logo-img">
+        <div class="title">
+          <strong style="color: white">Chasing Greatness</strong>
+          <span style="color: white">The Warriors Experience</span>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+
+          <li class="dropdown">
+            <a href="overview.html">Overview</a>
+            <ul class="submenu">
+              <li><a href="Quiz.html">Quiz</a></li>
+            </ul>
+          </li>
+
+          <li><a href="playercards.html">Players</a></li>
+          <li><a href="staff.html">Staff</a></li>
+          <li><a href="login.html">Login</a></li>
+
+          <li class="dropdown">
+            <a href="feedback.html">Rate & Feedback</a>
+            <ul class="submenu">
+              <li><a href="feedbacklist.html">Feedback List</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="content">
+      <h1>🏀 Dream Lineup Builder</h1>
+      <h2>The Dream Lineup Builder lets you build your dream lineup! You can edit it or remove it dependong on your preferences.</h2>
+
+      <div class="lineup-container">
+        <input type="text" id="playerName" placeholder="Player Name">
+        <input type="text" id="position" placeholder="Position (PG, SG, etc)">
+        <br>
+        <button onclick="addPlayer()">Add Player</button>
+
+        <div id="lineup" class="lineup"></div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 Chasing Greatness</p>
+    </footer>
+
+  </div>
+
+  <!-- ✅ ONLY ONE SCRIPT -->
+  <script src="builder.js"></script>
+</body>
+</html>
